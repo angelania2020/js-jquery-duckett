@@ -22,7 +22,7 @@
 
     hotelName.textContent = hotel.name;
     roomRate.textContent = hotel.roomRate.toFixed(2) + '₽';
-    specialRate.textContent = hotel.offerPrice() + '₽';
+    specialRate.textContent = hotel.offerPrice().toFixed(2) + '₽';
 
     //Вычисляем и записываем информацию об истечении акции
     var expiryMsg; //Сообщение, выводимое пользователям
