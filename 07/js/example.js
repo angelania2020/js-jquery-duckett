@@ -13,7 +13,7 @@ $(function () {
 
     // СЧЕТЧИК ПУНКТОВ
     function updateCount() { // Создаем функцию для обновления счетчика
-        var items = $('li[class!=complete]').length; // Количество элементов в списке
+        var items = $('li[class!="complete"]').length; // Количество элементов в списке
         $('#counter').text(items); // Добавляется в кружок счетчика
     }
 
@@ -52,8 +52,8 @@ $(function () {
             item = $this.text(); // Получаем текст из элемента списка
             $this.remove();  // Удаляем элемент списка
             $list  // Добавляем его в конец списка как завершенный
-                .append('<li class=\"complete\">' + item + '</li>')
-                .hide().fadeIn(300); // Прячем его, чтобы плавно вывести на экран
+                .append('<li class="complete">' + item + '</li>');
+            $('li:last').hide().fadeIn(300); // Прячем его, чтобы плавно вывести на экран
             updateCount();  // Обновляем счетчик
         } // Конец ветки else
     }); // Конец обработчика событий
