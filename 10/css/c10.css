@@ -1,0 +1,47 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+
+html {
+	background: url(../img/paint-backdrop.jpg) center center no-repeat fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+body {
+	font-family: "Open Sans", aria, sans-serif;
+}
+
+#contact {
+	background-color: #fff;
+	padding: 1em;
+	width: 270px;
+	margin: 50px auto 100px auto;
+	box-shadow: 0px 0px 10px 0px rgba(50, 50, 50, 0.75);
+	border-radius: 3px;
+}
+
+#logo {
+	position: fixed;
+	top: 0px;
+	left: 50px;
+}
+
+h2 {
+	margin: 0px;
+	font-size: 1.2em;
+	color: #474849;
+	text-align: left;
+	height: 40px;
+}
+
+p {
+	background-color: #fff;
+	padding: 10px 0px;
+	margin: 0px;
+	font-size: 100%;
+	border-top: 1px solid #999;
+	text-align: center;
+	color: #14b9d6;
+	font-weight: bold;
+}
